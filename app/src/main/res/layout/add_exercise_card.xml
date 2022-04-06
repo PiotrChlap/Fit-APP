@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:background="@drawable/rounded_corner_v2"
+    >
+        <ImageView
+            android:id="@+id/AEC_addImage"
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_add_circle_24"/>
+        <TextView
+            android:id="@+id/AEC_nameExercise"
+            android:layout_marginLeft="5dp"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:text="Nazwa Ćwiczenia"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:lines="2"
+            android:ellipsize="none"
+            android:maxLines="2"
+            android:layout_gravity="center" />
+        <ImageView
+            android:id="@+id/AEC_info"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+                android:src="@drawable/ic_baseline_info_24"
+            android:layout_gravity="center"/>
+</LinearLayout>

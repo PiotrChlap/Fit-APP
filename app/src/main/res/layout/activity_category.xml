@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CategoryActivity"
+    android:background="@drawable/training_background">
+
+    <ImageView
+        android:id="@+id/CA_homeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_arrow_back_24"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"/>
+    <TextView
+        android:id="@+id/CA_titleActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wybiecz\nKategorię"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:gravity="center"/>
+
+    <ImageView
+        android:id="@+id/CA_image"
+        android:layout_width="231dp"
+        android:layout_height="605dp"
+        android:layout_below="@+id/CA_titleActivity"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/human" />
+
+    <Button
+        android:id="@+id/CA_backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/CA_titleActivity"
+        android:layout_marginTop="84dp"
+        android:layout_marginRight="-77dp"
+        android:layout_toLeftOf="@+id/CA_image"
+        android:background="@drawable/grey_button"
+        android:text="Plecy"
+        app:backgroundTint="@null" />
+
+    <Button
+        android:id="@+id/CA_bicepsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/CA_titleActivity"
+        android:layout_marginTop="181dp"
+        android:layout_marginRight="-288dp"
+        android:layout_toLeftOf="@+id/CA_image"
+        android:background="@drawable/grey_button"
+        android:text="Biceps"
+        app:backgroundTint="@null" />
+
+    <Button
+        android:id="@+id/CA_hoodsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/CA_titleActivity"
+        android:layout_marginTop="91dp"
+        android:layout_marginRight="-257dp"
+        android:layout_toLeftOf="@+id/CA_image"
+        android:background="@drawable/grey_button"
+        android:text="Kaptury"
+        app:backgroundTint="@null" />
+
+    <Button
+        android:id="@+id/CA_shoulderButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/CA_titleActivity"
+        android:layout_marginTop="150dp"
+        android:layout_marginRight="-33dp"
+        android:layout_toLeftOf="@+id/CA_image"
+        android:background="@drawable/grey_button"
+        android:text="Barki"
+        app:backgroundTint="@null" />
+
+    <Button
+        android:id="@+id/CA_stomachButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/CA_titleActivity"
+        android:layout_marginTop="263dp"
+        android:layout_marginRight="-138dp"
+        android:layout_toLeftOf="@+id/CA_image"
+        android:background="@drawable/grey_button"
+        android:text="Brzuch"
+        app:backgroundTint="@null" />
+
+    <Button
+        android:id="@+id/CA_chestButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/CA_titleActivity"
+        android:layout_marginTop="167dp"
+        android:layout_marginRight="-166dp"
+        android:layout_toLeftOf="@+id/CA_image"
+        android:background="@drawable/grey_button"
+        android:text="Klata"
+        app:backgroundTint="@null" />
+
+    <Button
+        android:id="@+id/CA_forearmsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/CA_titleActivity"
+        android:layout_marginTop="236dp"
+        android:layout_marginRight="-315dp"
+        android:layout_toLeftOf="@+id/CA_image"
+        android:background="@drawable/grey_button"
+        android:text="Przedramonia"
+        app:backgroundTint="@null" />
+
+    <Button
+        android:id="@+id/CA_quadricepsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/CA_titleActivity"
+        android:layout_marginTop="355dp"
+        android:layout_marginRight="-274dp"
+        android:layout_toLeftOf="@+id/CA_image"
+        android:background="@drawable/grey_button"
+        android:text="Czworogłowy"
+        app:backgroundTint="@null" />
+
+    <Button
+        android:id="@+id/CA_calvesButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/CA_titleActivity"
+        android:layout_marginTop="445dp"
+        android:layout_marginRight="-68dp"
+        android:layout_toLeftOf="@+id/CA_image"
+        android:background="@drawable/grey_button"
+        android:text="Łydki"
+        app:backgroundTint="@null" />
+
+
+</RelativeLayout>

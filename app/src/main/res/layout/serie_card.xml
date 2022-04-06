@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/rounded_corner_v2"
+    android:layout_marginTop="5dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Seria "
+            android:textSize="25sp"
+            android:textColor="@color/white"
+            />
+        <TextView
+            android:id="@+id/SC_seriesNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NR"
+            android:textSize="25sp"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Powtórzeń "
+            android:textSize="25sp"
+            android:textColor="@color/white"
+            />
+        <EditText
+            android:id="@+id/SC_repeatNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="50dp"
+            android:text="10"
+            android:textSize="25sp"
+            android:textColor="@color/white"
+            android:inputType="numberDecimal"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Obciążenie "
+            android:textSize="25sp"
+            android:textColor="@color/white"
+            />
+        <EditText
+            android:id="@+id/SC_load"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10"
+            android:minWidth="50dp"
+            android:textSize="25sp"
+            android:textColor="@color/white"
+            android:inputType="numberDecimal"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" kg"
+            android:textSize="25sp"
+            android:textColor="@color/white"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

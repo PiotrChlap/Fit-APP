@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddTrainingActivity"
+    android:background="@drawable/training_background">
+
+    <TextView
+        android:id="@+id/ATA_titleActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Kreator Treningu"
+        android:textColor="@color/white"
+        android:textSize="40sp" />
+
+    <ImageView
+        android:id="@+id/ATA_backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_arrow_back_24"
+        android:layout_toLeftOf="@+id/ATA_titleActivity"
+        android:layout_marginTop="25dp"/>
+
+    <EditText
+        android:id="@+id/ATA_nameTraining"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ATA_titleActivity"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/rounded_corner_v2"
+        android:drawablePadding="20dp"
+        android:hint="Nazwa treningu"
+        android:padding="15dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:id="@+id/ATA_days"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ATA_nameTraining"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_corner_v2"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <CheckBox
+                android:id="@+id/ATA_checkPon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PON"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:buttonTint="@color/stroke_grey"
+                />
+            <CheckBox
+                android:id="@+id/ATA_checkWt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="WT"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:buttonTint="@color/stroke_grey"
+                />
+            <CheckBox
+                android:id="@+id/ATA_checkSr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ŚR"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:buttonTint="@color/stroke_grey"
+                />
+            <CheckBox
+                android:id="@+id/ATA_checkCzw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CZW"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:buttonTint="@color/stroke_grey"
+                />
+            <CheckBox
+                android:id="@+id/ATA_checkPt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PI"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:buttonTint="@color/stroke_grey"
+                />
+        </LinearLayout>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:gravity="center">
+           <CheckBox
+               android:id="@+id/ATA_checkSob"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="SOB"
+               android:textColor="@color/white"
+               android:textStyle="bold"
+               android:buttonTint="@color/stroke_grey"
+               />
+           <CheckBox
+               android:id="@+id/ATA_checkNd"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="ND"
+               android:textColor="@color/white"
+               android:textStyle="bold"
+               android:buttonTint="@color/stroke_grey"
+               />
+       </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ATA_scrollExercises"
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:layout_below="@+id/ATA_days"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/rounded_corner_v2"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/ATA_days"
+            android:layout_marginBottom="5dp">
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:id="@+id/ATA_RecyclerExercises"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </ScrollView>
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ATA_addExerciseButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_below="@+id/ATA_scrollExercises"
+            android:background="@drawable/grey_button"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_add_24" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DODAJ ĆWICZENIE"
+                android:textSize="15sp"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+
+    <Button
+        android:id="@+id/ATA_addTrainingButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ATA_addExerciseButton"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/grey_button"
+        android:text="Dodaj trening"
+        android:textSize="15sp"
+        app:backgroundTint="@null" />
+</RelativeLayout>

@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">FitAPP</string>
+    <string name="title_activity_forgot_password">ForgotPasswordActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="openNavDrawer">Navigation Drawer Open</string>
+    <string name="closeNavDrawer">Navigation Drawer Close</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="category_quadriceps">Czworogłowe uda</string>
+    <string name="category_forearms">Przedramiona</string>
+    <string name="category_biceps">Biceps</string>
+    <string name="category_back">Plecy</string>
+    <string name="category_hoods">Kaptury</string>
+    <string name="category_shoulder">Barki</string>
+    <string name="category_stomach">Brzuch</string>
+    <string name="category_chest">Klata</string>
+    <string name="category_calves">Łydki</string>
+    <string name="pon">Monday</string>
+    <string name="wt">Tuesday</string>
+    <string name="sr">Wednesday</string>
+    <string name="czw">Thursday</string>
+    <string name="pt">Friday</string>
+    <string name="sob">Saturday</string>
+    <string name="nd">Sunday</string>
+    <string name="title_activity_progress">ProgressActivity</string>
+</resources>

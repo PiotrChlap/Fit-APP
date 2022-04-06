@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".InfoExerciseActivity"
+    android:background="@drawable/training_background">
+    <ImageView
+        android:id="@+id/AIE_backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_arrow_back_24"
+        android:layout_margin="20dp"
+        />
+    <TextView
+        android:id="@+id/AIE_exerciseName"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:text="Nazwa ćwiczenia"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:scrollbars="vertical"
+        android:scrollbarStyle="insideOverlay"
+        android:fadeScrollbars="true"
+        android:fadingEdge="vertical"
+        />
+    <com.google.android.youtube.player.YouTubePlayerView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/AIE_ytPlayer"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/AIE_exerciseName"
+        android:layout_marginBottom="10dp"/>
+    <TextView
+        android:id="@+id/AIE_description"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:text="Opis ćwiczenia"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:scrollbars="vertical"
+        android:scrollbarStyle="insideOverlay"
+        android:fadeScrollbars="true"
+        android:fadingEdge="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/AIE_ytPlayer"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        />
+
+
+
+</RelativeLayout>

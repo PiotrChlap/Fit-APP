@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#E62A2A2A">
+    <item android:id="@+id/NAVMN_Progress"
+        android:title="Postęp" />
+    <item android:id="@+id/NAVMN_Trening"
+        android:title="Trening" />
+    <item android:id="@+id/NAVMN_Achiv"
+        android:title="Osiągnięcia"/>
+    <item android:id="@+id/NAVMN_LogOut"
+        android:title="Wyloguj" />
+</menu>

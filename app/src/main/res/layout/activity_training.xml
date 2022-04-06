@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TrainingActivity"
+    android:background="@drawable/training_background">
+
+    <ImageView
+        android:id="@+id/TA_backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_baseline_home_24" />
+
+
+    <TextView
+        android:id="@+id/TA_nameTraining"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="Trening"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+ />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp">
+        <ImageView
+            android:id="@+id/TA_addTrainingButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_add_24"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dodaj"
+            android:textSize="20sp"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/TA_noTraining"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Brak treningów.\nDodaj swój pierwszy Treining"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:textStyle="bold|italic"
+        android:layout_below="@id/TA_nameTraining"
+        android:layout_marginTop="30dp"
+        android:visibility="invisible"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"/>
+
+    <ScrollView
+        android:id="@+id/TA_scrollDays"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_below="@+id/TA_nameTraining"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/TA_daysTrainingRecyclerAdapter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp" />
+    </ScrollView>
+
+
+    <Button
+        android:id="@+id/TA_startTrainingButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TA_scrollDays"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="25dp"
+        android:backgroundTint="@color/white"
+        android:text="Użyj gotowych zestawów"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+
+</RelativeLayout>
